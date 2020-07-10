@@ -215,9 +215,10 @@ export default Controller.extend(Analytics, {
             window.open(href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=600,height=400');
             return false;
         },
-        // Sends Event to GA.  Used to send second event to Keen to track non-contributor downloads, but
-        // that functionality has been removed.  Stub left in place in case we want to split-log later.
-        dualTrackNonContributors(category, label, url, primary) {
+        // Sends Event to GA.  Previously sent a second event to Keen to track non-contributor
+        // downloads, but that functionality has been removed.  Stub left in place in case we want
+        // to double-log later.
+        dualTrackNonContributors(category, label, url) {
             this.send('click', category, label, url); // Sends event to both Google Analytics and Keen.
         },
     },
