@@ -110,7 +110,9 @@
     "url": "https://github.com/CenterForOpenScience/ember-osf-preprints/issues"
   },
   "homepage": "https://github.com/CenterForOpenScience/ember-osf-preprints#readme",
-  "dependencies": {},
+  "dependencies": {
+    "centerforopenscience/ember-osf": "https://github.com/felliott/ember-osf.git#feature/stop-keen-logging"
+  },
   "volta": {
     "node": "10.18.1",
     "yarn": "1.21.1"
